@@ -1,12 +1,10 @@
-# Deneme sitesi
+# Dosya yükleme
 
-Vercel’e bağlamak için hazır basit bir statik site.
+Paylaşılan indirme linkleri herkese açık olur. Yükleme, silme ve dosya listesi yalnızca `UPLOAD_KEY` ile çalışır.
 
-## Vercel’de yayınlama
+## Vercel
 
-1. [vercel.com](https://vercel.com) hesabına GitHub ile giriş yap.
-2. **Add New → Project** de.
-3. Bu GitHub deposunu seç.
-4. Framework Preset olarak **Other** bırak, **Deploy**’a bas.
-
-Kök dizindeki `index.html` otomatik yayınlanır.
+1. Application Preset: **Next.js**
+2. Storage → **Blob** → `BLOB_READ_WRITE_TOKEN`
+3. Environment Variable: `UPLOAD_KEY` (en az 20 karakter, gizli tut)
+4. Redeploy
